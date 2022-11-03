@@ -1,0 +1,10 @@
+For gettings lyrics:
+    Serp api: https://serpapi.com/
+	- limited to 100 searches/month for free
+	- isaac will email about edu discount
+	- serp api spits out a spotify link under the subtree "listen"
+
+For playing lyrics
+    Spotipy: https://spotipy.readthedocs.io/en/2.21.0/#getting-started
+	- Can play a song directly based off a spotify link
+
