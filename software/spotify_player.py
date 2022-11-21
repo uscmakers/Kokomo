@@ -9,9 +9,9 @@ import spotipy
 import webbrowser
 from pprint import pprint
 from time import sleep
-username = 'thegerstman'
-clientID = 'b7c64f620a0a4d18ae8379a7aba243c4'
-clientSecret = 'f0fd58eb639a4655b07d51671a4454f4'
+username = '[username]'
+clientID = '[client-id]'
+clientSecret = '[client-secret]'
 redirectURI = 'http://google.com/'
 
 # Create OAuth Object
@@ -44,8 +44,8 @@ song = tracks_items[0]['external_urls']['spotify']
 sp.start_playback(uris=[song])
 
 # Change volume
-sp.volume(100)
-sleep(2)
-sp.volume(50)
-sleep(2)
-sp.volume(100)
+# sp.volume(100)
+# sleep(2)
+# sp.volume(50)
+# sleep(2)
+# sp.volume(100)
