@@ -2,7 +2,6 @@
 # speech to text and text to speech
 
 import speech_recognition as sr
-import pyttsx3
 import requests
 import pywhatkit
 
@@ -16,7 +15,7 @@ try:
         
     # use the microphone as source for input.
     with sr.Microphone() as source:
-            
+        print("Recording...")
         audio = r.record(source, duration=5)
         text = r.recognize_google(audio)
             
@@ -35,6 +34,5 @@ response_json = response.json()
 
 knowledge_graph = response_json["knowledge_graph"]
 song_name = knowledge_graph["title"]
-artist_name = knowledge_graph["artist"]
 
-pywhatkit.playonyt(song_name + " by " + artist_name + " lyrics")
+pywhatkit.playonyt(song_name + " lyrics")
